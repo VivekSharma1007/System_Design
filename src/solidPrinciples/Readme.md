@@ -54,3 +54,12 @@ Payment pay = new UPI();
 
 - When classes are implementing irrelevant functionalities.
 - When modification in one method of interface, force the changes in non-related classes.
+
+### Dependency Inversion Principle: 
+
+- High level modules should not depend on low level modules.
+- Both should depend on abstractions.
+- Abstraction should not depend upon details.
+- Details should not depend upon abstractions.
+- High-Level Modules: The parts of your code that contain the core logic.
+- Low-Level Modules: The ones that handle the details — like talking to a database, making API calls, reading files, or providing data.
