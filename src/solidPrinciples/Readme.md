@@ -35,11 +35,22 @@ UI components.
 - Any base class should be substitutable to its base(parent) class without breaking the 
 correctness of the program.
 - T is parent clas, S is child class 
-- Generally T obj = new T();
-- with LSP: T obj = new S(); should also work without breaking the functionalities or correctness of program
+Generally T obj = new T();
+with LSP: T obj = new S(); should also work without breaking the functionalities or correctness of program
 - This principle ensures that derived classes extend the base class without changing its
 behaviour.
 - And if the parent reference is used for the child object, the functionality should not break.
 
 - e.g: Payment class with processPayment() and another classes like UPI, CreditCard
 Payment pay = new UPI();
+
+### Interface Segregation Principle:
+
+- A class should not be forced to implement interface that it don't use.
+- Rather than having large, monolithic interfaces, we should have smaller and more specific interfaces.
+- This prevents unnecessary implementation in classes that they don't need.
+
+#### When to use:
+
+- When classes are implementing irrelevant functionalities.
+- When modification in one method of interface, force the changes in non-related classes.

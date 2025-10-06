@@ -1,6 +1,6 @@
-package solidPrinciples;
+package solidPrinciples.liskovSubstitutionPrinciple;
 
-public class LiskovSubstitutionPrinciple {
+public class LSP {
 
     public static void main(String[] args) {
 //        Bird sparrow = new Sparrow();
